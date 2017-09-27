@@ -3,12 +3,15 @@
 int main(void)
 {
     int n = 1;
-    while (n <= 1000)
+	int sum = 0;
+
+    while (n < 1000)
     {
         if (n % 3 == 0 || n % 5 == 0)
         {
-            printf(n == 1000 ? "%d" : "%d, ", n);
+			sum += n;
         }
         n++;
     }
+	printf("%d", sum);
 }
