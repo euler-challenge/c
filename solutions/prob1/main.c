@@ -9,5 +9,6 @@ int main(void)
         {
             printf(n == 1000 ? "%d" : "%d, ", n);
         }
+        n++;
     }
 }
